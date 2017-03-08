@@ -2,12 +2,39 @@
 <html>
   <head>
     <title>Sinatra Web App</title>
+    <style>
+    #centered {
+      text-align: center;
+      margin-top: 10%;
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+     }
+     h3 {
+
+     }
+     p {
+      font-weight: bold;
+     }
+     body {
+      background: <%= background_color %>;
+     }
+
+     }
+    </style>
+
   </head>
   <body>
+  <div id="centered">
+
+    <h1>Number Guessing Game</h1>
+    <h3>This is a game where you try and guess a number  0 - 100</h3>
     <form>
       <input type="text" name="guess" />
       <input type="submit" value="Guesss!">
     </form>
     <p> <%= message %> </p>
+
+  </div>
   </body>
 </html>
